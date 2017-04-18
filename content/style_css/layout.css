@@ -1,0 +1,294 @@
+/*STATIC STYLES THAT ARE SPECIFIC TO THIS LAYOUT - LAYOUT 4*/
+body {
+  margin: 0;
+  font-family:arial,sans-serif;
+  font-size: 12px;
+}
+
+/*main container is fixed with and centered on page with static borders*/
+#portContainer {
+  max-width: 940px;
+  margin: 10px auto;
+}
+
+#portBody {
+  border: 1px solid transparent;
+  min-height: 700px;
+  display: inline-block;
+}
+
+#portBody h1 {
+  margin: 5px 0 0;
+}
+
+/*nav just sits on top of the text with a fixed width*/
+#portNav {
+  padding: 0;
+  overflow: auto;
+  display: inline-block;
+  width: 100%;
+  border: 1px solid transparent;
+  border-left: none!important;
+  border-right: none!important;
+  border-top: none!important;
+}
+
+#portNav ul {
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+/*links are floated so the will be horizontal, they are all same width so they wrap nicely*/
+#portNav ul li {
+  float: left;
+  padding: 5px 9px 5px 0;
+  list-style-type: none;
+}
+
+/*this clear is needed to insure that the nav background doesn't shrink under the buttons*/
+#portNav br {
+  clear: both;
+}
+
+/* settings for the links centered in nav div. background repeat is turned off for users that use an image for the links */
+#portNav ul li a {
+  float: left;
+  padding: 10px 5px;
+  font-size: 14px;
+  background-repeat: no-repeat;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+#portNav ul li.extras {
+  float: right;
+  padding: 0;
+  margin: 0px 0px;
+}
+
+#portNav ul li.extras a {
+  float: right;
+  padding: 4px 6px 4px 0;
+  vertical-align: middle;
+  width: 100px;
+  font-weight: normal;
+}
+
+#portNav ul li.extras br {
+  display: none;
+}
+
+/*this style won't be needed since the header will be populated with user data*/
+#portHeader {
+  margin: 0;
+  padding: 10px 30px;
+  overflow: hidden;
+  border: 1px solid transaparent;
+  word-wrap: break-word;
+}
+
+#portText {
+  padding: 5px 30px 12px;
+}
+
+#portHeader h1 {
+  font-size: 200%;
+}
+
+#portHeader h1, #portHeader p {
+    font-weight: normal;
+    margin: 0.8em 0;
+}
+
+#portText > h2 {
+  font-size: 200%;
+  margin:0;
+}
+
+#portText .portSection h3.section-title {
+  font-size: 120%;
+  font-weight: normal;
+  margin: 1em 0 0;
+  display: block;
+}
+
+#portText .portSection h3 {
+  display: inline-block;
+  margin: 0;
+  padding: 2px 0;
+}
+
+.portSection {
+  font-size: 120%;
+  line-height: 160%;
+  margin-bottom: 30px;
+}
+
+.autoClickOnArtifactPreview {
+  border-radius: 3px;
+  font-family: arial;
+  font-size: 80%;
+  padding: 0 8px;
+  text-decoration: none;
+  margin: 0 4px 0 0;
+  display: inline-block;
+  font-weight: normal;
+}
+
+.portSection .vtbegenerated {
+ margin: 0 0 10px;
+}
+/*this style won't be needed since the footer will be populated with user data*/
+#portFooter {
+  overflow: hidden;
+  padding: 10px 30px;
+  word-wrap: break-word;
+}
+
+/*style just for demo, this can be removed*/
+#stylelist {
+  font-size: 90%;
+  padding: 10px;
+}
+
+/*hides the navigation label for accessiblity*/
+#navLabel {
+ position: absolute;
+ overflow: hidden;
+ left: -10000px;
+ top: -1000px;
+ width: 1px;
+ height: 1px;
+}
+
+/* End hide from IE-mac */
+#addcomment {
+  padding: 0 0 10px 0;
+  width: 680px;
+  margin: 0 0 20px 0px;
+}
+
+#addcomment h2 {
+  margin: 0;
+  padding: 8px 0 20px 10px;
+}
+
+#addcomment p {
+  margin: 10px 0;
+}
+
+#addcomment textarea {
+  border: 1px solid #999;
+}
+
+#viewcomments {
+  margin-top: 5px;
+}
+
+#viewcomments li {
+  border-top: 1px solid #efefef;
+  padding: 12px 0;
+}
+
+/* applies a white background to the Add Comment form */
+div#dataCollectionContainer {
+  margin-bottom:12px;
+  border:1px solid #ccc;
+  padding:6px;
+  background:white;
+}
+
+div#listContainer {margin-bottom:12px;}
+
+/* Artifact Styling */
+.artifactWrap, .folderContentView {
+  width: 860px;
+  padding: 20px 40px;
+  margin: 10px auto 20px;
+  font-size: 120%;
+  line-height: 160%;
+}
+.artifactWrap h2, .folderContentView h2 {
+  margin: 1em 0 0;
+  font-weight: bold;
+  font-size: 140%;
+}
+
+.artifactWrap h2:first-child, .folderContentView h2:first-child {
+  margin: 0;
+}
+
+.artifactViewBody, .artifactAttachmentFolderBody {
+  padding-top: 45px;
+}
+
+/* The artifactViewActionBar classes are used to style the button bar for Artifact view online/offline */
+.artifactViewActionBar {
+  position: absolute;
+  top: 0px;
+  height: 45px;
+  width: 100%;
+  background: #444;
+  color: white;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5), 1px 1px 15px rgba(0,0,0, 0.5) inset;
+}
+
+.artifactViewAction {
+  float: right;
+  padding: 15px;
+}
+
+.closeArtifactView {
+  padding: 6px 16px 7px;
+  text-decoration: none;
+  font-family: arial;
+  background: #0099B6;
+  background-image: -moz-linear-gradient(100% 100% 90deg, #076D88, #0099B6);
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 90%, from(#0099B6), to(#076D88) );
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#0099B6, endColorstr=#076D88";
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#0099B6, endColorstr=#076D88 );
+  color: white;
+  font-size: 105%;
+  font-weight: bold;
+  border: none;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.8);
+  border: 1px solid #076D88;
+  border-radius: 2px;
+  color: #fff;
+  box-shadow: none;
+  vertical-align: baseline;
+  margin: 0 0 0 10px;
+}
+
+.closeArtifactView:hover {
+  background: #0188A3;
+  background-image: -moz-linear-gradient(100% 100% 90deg, #076D88, #076D88);
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 90%, from(#076D88), to(#076D88) );
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#076D88, endColorsr= #076D88";
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#076D88, endColorstr=  #076D88 );
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  color: #fff;
+  border: 1px solid #076D88;
+  box-shadow: none;
+}
+
+/* RTL Styles - May put into own styles sheet in future version*/
+
+html[dir="rtl"] #portNav ul li {
+  float: right;
+  padding: 5px 0 5px 9px;
+}
+
+html[dir="rtl"] .autoClickOnArtifactPreview {
+ margin: 0 0 0 4px;
+}
+
+/* This is a fix which solves floating issues. To be used when containing div allows children to hang outside */
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}

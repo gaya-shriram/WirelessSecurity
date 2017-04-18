@@ -1,0 +1,63 @@
+/* Ocean */
+
+body {
+ background: /*#4CADFF*/#4c96d9 url(images/blue-bg-40.png) repeat;
+ color: #10446F;
+}
+
+#portBody h2, #portBody h3, .artifactWrap h2, .folderContentView h2, .portfolioArtifactTable th {
+ color: #3073AB;
+}
+
+#portBody {
+ background-color: #f3f7fa;
+ border: 1px solid #3074AB;
+ border-bottom: none;
+ border-top: none;
+}
+
+#portNav {
+border: 1px solid #3074AB;
+}
+
+#portNav ul li a {
+ color: #2B6899;
+}
+
+#portNav ul li a:hover {
+ background-color: #d8e5ef;
+}
+
+#portContainer {
+}
+
+#portText {
+
+}
+
+#portHeader, #portFooter {
+  background: #4096DC;
+  color: #ffffff;
+  border: 1px solid #3074AB;
+}
+
+/* Artifact Styling */
+
+.artifactWrap, .folderContentView {
+ background-color: #f3f7fa;
+ border: 1px solid #3074AB;
+}
+
+.artifactWrap .portfolioArtifactTable .selectedCell {
+  background:#D1EAEF url(images/button_ok_ia.png) no-repeat 12px 12px;
+}
+
+.autoClickOnArtifactPreview {
+ background-color: #d8e5ef;
+ color: #3074AB;
+}
+
+.autoClickOnArtifactPreview:hover, .autoClickOnArtifactPreview:active {
+ background-color: #c1d5e6;
+ color: #10446F;
+}
